@@ -23,4 +23,12 @@ class MyApp < Sinatra::Base
     erb :result, :layout => :base
   end
 
+  post "/send_message" do
+    @client = Twilio::REST::Client.new('ACed3ed813257f8acedfce46a695216257','cb1dd832eda91ea39319fe6827f1650b')
+    @client.messages.create(
+      from: '+14342605034', # this is the Flatiron School's Twilio number
+      to: params[:phonenumber],
+      body: "#{params[:name]} has sent you a business card. Click here to view: #{params[:qrcode]}"
+    )
+  end
 end
