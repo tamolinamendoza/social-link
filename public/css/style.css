@@ -20,7 +20,7 @@ html, body {
 .brand_text{
   color: #D9B310 !important;
   font-weight: 600 !important;
-  font-size: 3em !important;
+  font-size: 4em !important;
 }
 
 body {
@@ -46,6 +46,7 @@ input:focus {
 
 .header {
   background-color: #1D2731;
+  height: 64px;
 }
 
 .brand-logo {
@@ -314,4 +315,22 @@ input:focus {
   margin: 0;
   display: inline;
   margin-left: 20px;
+}
+.page-footer1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.page-footer2 {
+  bottom: 0;
+  width: 100%;
+}
+.page-footer{
+  background-color: #1D2731 !important;
+  padding: 0 !important;
+  /*height: 40px !important;*/
+}
+.footer-copyright {
+  margin-bottom: -3px;
+  height: inherit !important;
 }
