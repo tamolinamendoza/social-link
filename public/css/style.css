@@ -1,0 +1,298 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.layout {
+  background-color: white;
+  width:70%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 50px;
+}
+
+.brand_text{
+  color: #D9B310 !important;
+  font-weight: 600 !important;
+  font-size: 3em !important;
+}
+
+body {
+  background-color:#C5C1C0; /*#0A476D*/
+}
+
+/*.body_work {
+  background-color: #0A476D;
+}*/
+
+.input-field .prefix.active {
+  color:#D9B310;
+}
+
+label.active {
+  color: black !important;
+}
+
+input:focus {
+  border-bottom: 1px solid #D9B310 !important;
+    box-shadow: 0 1px 0 0 #D9B310 !important;
+}
+
+.header {
+  background-color: #1D2731;
+}
+
+.brand-logo {
+  margin-left: 40px;
+}
+
+.below_header{
+  margin-top: 5px;
+  margin-bottom: 0px;
+  height: 100px;
+}
+
+.fill_in{
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.input {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.business_card {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.z-depth-5 {
+    box-shadow: 0 -5px 24px 0 rgba(0,0,0,0.2),0 12px 20px 0 rgba(0,0,0,0.22);
+}
+
+.btn {
+  background-color: #1D2731 !important;
+}
+
+.btn:hover{
+  background-color: #D9B310 !important;
+  color: #1D2731 !important;
+  font-weight: bold !important;
+}
+
+.business_card {
+  background-image: url("../images/Card-1.jpg");
+  background-size: 100%;
+  display: block;
+  position: relative;
+  width: 540px;
+  height: 315px;
+}
+
+.field {
+  position: absolute;
+}
+
+
+
+#name{
+  top: -5px;
+  text-align: center;
+  width: 540px;
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+#email{
+  top:110px;
+  left:17px;
+  font-size: 1.35em;
+  color: white;
+  font-weight: 200;
+  width: 350px;
+}
+
+.icon{
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+#phone{
+  top:180px;
+  left:17px;
+  font-size: 1.35em;
+  color: white;
+  font-weight: 200;
+  width: 350px;
+}
+
+#address {
+  top: 238px;
+  left:43px;
+  font-size: 1.35em;
+  color: white;
+  font-weight: 200;
+  width: 350px;
+
+}
+
+#address_icon{
+  top: 240px;
+  left: 17px;
+  color: white;
+}
+
+#work{
+  top: 64px;
+  display: block;
+  width: 540px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#work span {
+  background-color: white;
+  padding-left: 7px;
+  padding-right: 7px;
+
+}
+#qr{
+  top: 150px;
+  left: 427px;
+}
+
+.link {
+  text-decoration: none;
+  color: white ;
+
+}
+
+.link:hover {
+  font-weight: bold;
+}
+
+.header_active{
+  background-color: #D9B310;
+  font-weight: bold;
+}
+
+.header_text_active {
+  font-weight:300;
+}
+
+.center_button  {
+    width: 300px;
+    height: 150px;
+
+    position: absolute;
+    top:70%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.button_formatting {
+  width: 300px;
+  height: 80px;
+  font-size: 2.4em;
+  padding: 12px;
+  background-color: #1D2731 !important;
+  color: #D9B310 !important;
+  font-weight: 200;
+
+}
+
+.send_button  {
+    width: 400px;
+    height: 80px;
+
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.button_formatting_send {
+  margin-top: 40px;
+  width: 400px;
+  height: 80px;
+  font-size: 2.4em;
+  padding: 20px;
+  background-color: #1D2731 !important;
+  color: #D9B310 !important;
+  font-weight: 200;
+
+}
+
+.white_to_bottom {
+  height: 100%;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.toast_final {
+  display: block !important;
+  margin: 0 auto !important;
+  width: 800px;
+  text-align: center;
+  font-size: 2em;
+  background-color: rgba(217,179,16,0.4);
+  color:#1D2731;
+
+}
+
+#toast-container {
+  right: inherit;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: 15px;
+}
+
+#background {
+  background-image: url(../images/city-sunny-people-street.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 150%;
+  background-size: cover;
+}
+
+.transparent_background{
+  background-color: transparent;
+
+}
+.white_background {
+  background-color: white;
+  margin-top: 30px;
+}
+
+.yellow_text {
+  font-weight: 200;
+}
+
+.bold_text {
+  font-weight: 600;
+}
+
+.modal{
+  z-index: 2000000000 !important;
+
+}
