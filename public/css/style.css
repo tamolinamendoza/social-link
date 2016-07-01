@@ -333,6 +333,7 @@ input:focus {
 .footer-copyright {
   margin-bottom: -3px;
   height: inherit !important;
+  white-space: nowrap;
 }
 #download-button {
   margin-top: 40px;
