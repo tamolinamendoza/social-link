@@ -411,10 +411,33 @@ input:focus {
   float:left;
   width: 40%;
   margin: 0 auto;
+  opacity: 0.8;
+  filter: alpha(opacity=30);
 }
 
-.themes:hover { opacity: 0.3;
+.themes_left:hover {
+  opacity: 1;
   filter: alpha(opacity=30);
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2), 0 8px 40px 3px rgba(0, 0, 0, 0.19);
+  width: 41%;
+  margin-right: 9%;
+  margin-bottom:-5%;
+
+}
+
+.themes_bottom_right:hover {
+  opacity: 1;
+  filter: alpha(opacity=30);
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2), 0 8px 40px 3px rgba(0, 0, 0, 0.19);
+  width: 41%;
+}
+
+.themes_right:hover {
+  opacity: 1;
+  filter: alpha(opacity=30);
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2), 0 8px 40px 3px rgba(0, 0, 0, 0.19);
+  width: 41%;
+  margin-bottom: -5%;
 }
 
 .themes_left{
@@ -422,9 +445,6 @@ input:focus {
   margin-left: 5%;
 }
 
-.themes_right{
-
-}
 
 .themes_bottom{
   margin-top: 50px;

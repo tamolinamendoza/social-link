@@ -77,7 +77,8 @@ class MyApp < Sinatra::Base
     @client.messages.create(
       from: '+14342605034', # this is the Flatiron School's Twilio number
       to: params[:phonenumber],
-      body: "#{params[:name]} has sent you a business card. Click here to view: #{params[:qrcode]}"
+      body: "MAMI ES TOMI. Me quede sin pila. Te estoy escribiendo desde mi programa de code asi que si respondes no lo voy a poder ver. Si quieres hablar conmigo escribeme un correo , estoy en mi computadora."
+      # body: "#{params[:name]} has sent you a business card. Click here to view: #{params[:qrcode]}"
     )
   end
 end
