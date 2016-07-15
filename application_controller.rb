@@ -8,11 +8,27 @@ class MyApp < Sinatra::Base
     erb :index, :layout => :base
   end
 
-  get "/inputs" do
-    erb :inputs, :layout => :base
+  get "/themes" do
+    erb :themes, :layout => :base
   end
 
-  get "/result" do
+  get "/inputs_blue" do
+    erb :inputs_blue, :layout => :base
+  end
+
+  get "/inputs_red" do
+    erb :inputs_red, :layout => :base
+  end
+
+  get "/inputs_black" do
+    erb :inputs_black, :layout => :base
+  end
+
+  get "/inputs_brown" do
+    erb :inputs_brown, :layout => :base
+  end
+
+  get "/result_blue" do
     @first_name = params[:first_name]
     @last_name = params[:last_name]
     @email = params[:email]
@@ -20,7 +36,40 @@ class MyApp < Sinatra::Base
     @work = params[:work]
     @address = params[:address]
     @qr_code = shorten_link(request.base_url + request.fullpath)
-    erb :result, :layout => :base
+    erb :result_blue, :layout => :base
+  end
+
+  get "/result_red" do
+    @first_name = params[:first_name]
+    @last_name = params[:last_name]
+    @email = params[:email]
+    @phone = params[:phone]
+    @work = params[:work]
+    @address = params[:address]
+    @qr_code = shorten_link(request.base_url + request.fullpath)
+    erb :result_red, :layout => :base
+  end
+
+  get "/result_black" do
+    @first_name = params[:first_name]
+    @last_name = params[:last_name]
+    @email = params[:email]
+    @phone = params[:phone]
+    @work = params[:work]
+    @address = params[:address]
+    @qr_code = shorten_link(request.base_url + request.fullpath)
+    erb :result_black, :layout => :base
+  end
+
+  get "/result_brown" do
+    @first_name = params[:first_name]
+    @last_name = params[:last_name]
+    @email = params[:email]
+    @phone = params[:phone]
+    @work = params[:work]
+    @address = params[:address]
+    @qr_code = shorten_link(request.base_url + request.fullpath)
+    erb :result_brown, :layout => :base
   end
 
   post "/send_message" do

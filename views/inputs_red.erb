@@ -7,7 +7,7 @@
       <a href="#!" class="brand-logo brand_text">Social Link</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="/">Home</a></li>
-        <li class="header_active"><a href="/inputs" class="header_text_active">Build Your Card</a></li>
+        <li class="header_active"><a href="/themes" class="header_text_active">Build Your Card</a></li>
         <li><a href="#"></a></li>
       </ul>
     </div>
@@ -24,16 +24,16 @@
 
 <div class="card-panel layout z-depth-3">
 
-       <form class="input" method="GET" action="/result">
+       <form class="input" method="GET" action="/result_red">
 
          <div class="row">
            <div class="input-field col s6">
              <i class="material-icons prefix">account_circle</i>
-             <input type="text" class="validate" name="first_name">
+             <input type="text" class="validate" name="first_name" required>
              <label>First Name</label>
            </div>
            <div class="input-field col s6">
-             <input type="text" class="validate" name= "last_name">
+             <input type="text" class="validate" name= "last_name" required>
              <label>Last Name</label>
            </div>
          </div>
@@ -42,7 +42,7 @@
          <div class="row">
            <div class="input-field col s12">
              <i class="material-icons prefix">email</i>
-             <input type="email" class="validate" name="email">
+             <input type="email" class="validate" name="email" required>
              <label>Email</label>
            </div>
          </div>
@@ -50,7 +50,7 @@
          <div class="row">
            <div class="input-field col s12">
              <i class="material-icons prefix">phone</i>
-             <input type="tel" class="validate" name="phone">
+             <input type="tel" class="validate" name="phone" required>
              <label>Phone Number</label>
            </div>
          </div>
@@ -58,7 +58,7 @@
          <div class="row">
            <div class="input-field col s12">
              <i class="material-icons prefix">work</i>
-             <input type="text" class="validate" name="work">
+             <input type="text" class="validate" name="work" required>
              <label> Job Title </label>
            </div>
          </div>
@@ -66,7 +66,7 @@
          <div class="row">
            <div class="input-field col s12">
              <i class="material-icons prefix">location_on</i>
-             <input type="text" class="validate" name="address">
+             <input type="text" class="validate" name="address" required>
              <label> Address </label>
            </div>
          </div>
@@ -76,7 +76,8 @@
         </button>
 
        </form>
-   </div>
+</div>
+
 </div>
 
 <footer class="page-footer page-footer2">

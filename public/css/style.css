@@ -74,10 +74,34 @@ input:focus {
 .button {
   margin: 0 auto;
   display: block;
-  margin-top: 50px;
+  margin-top: 50px ;
   margin-bottom: 50px;
 }
-.business_card {
+.business_card_blue {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.business_card_red {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.business_card_black {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.business_card_brown {
   width: 90%;
   margin: 0 auto;
   display: block;
@@ -99,8 +123,8 @@ input:focus {
   font-weight: bold !important;
 }
 
-.business_card {
-  background-image: url("../images/Card-1.jpg");
+.business_card_blue {
+  background-image: url("../images/Card1.jpg");
   background-size: 100%;
   display: block;
   position: relative;
@@ -108,11 +132,37 @@ input:focus {
   height: 315px;
 }
 
+.business_card_red {
+  background-image: url("../images/Card3.jpg");
+  background-size: 100%;
+  display: block;
+  position: relative;
+  width: 540px;
+  height: 315px;
+
+}
+.business_card_black {
+  background-image: url("../images/Card4.jpg");
+  background-size: 100%;
+  display: block;
+  position: relative;
+  width: 540px;
+  height: 315px;
+
+}
+.business_card_brown {
+  background-image: url("../images/Card2.jpg");
+  background-size: 100%;
+  display: block;
+  position: relative;
+  width: 540px;
+  height: 315px;
+
+}
+
 .field {
   position: absolute;
 }
-
-
 
 #name{
   top: -5px;
@@ -316,6 +366,10 @@ input:focus {
   display: inline;
   margin-left: 20px;
 }
+
+.next_icon{
+  font-size: 3rem !important;
+}
 .page-footer1 {
   position: absolute;
   bottom: 0;
@@ -337,4 +391,49 @@ input:focus {
 }
 #download-button {
   margin-top: 40px;
+}
+
+.panel_themes {
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 70%;
+    background-color: white;
+    padding: 2%;
+    height: 100%;
+}
+
+.div_themes {
+  width:100%;
+  margin: 0 auto;
+}
+
+.themes {
+  float:left;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.themes:hover { opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+
+.themes_left{
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.themes_right{
+
+}
+
+.themes_bottom{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.themes_subtitle{
+  text-align: center;
+  margin-bottom: 3%;
+  font-weight: 300;
+
 }
