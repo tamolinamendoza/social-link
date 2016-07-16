@@ -28,6 +28,14 @@ class MyApp < Sinatra::Base
     erb :inputs_brown, :layout => :base
   end
 
+  get "/inputs_green" do
+    erb :inputs_green, :layout => :base
+  end
+
+  get "/inputs_purple" do
+    erb :inputs_purple, :layout => :base
+  end
+
   get "/result_blue" do
     @first_name = params[:first_name]
     @last_name = params[:last_name]
@@ -72,6 +80,27 @@ class MyApp < Sinatra::Base
     erb :result_brown, :layout => :base
   end
 
+  get "/result_green" do
+    @first_name = params[:first_name]
+    @last_name = params[:last_name]
+    @email = params[:email]
+    @phone = params[:phone]
+    @work = params[:work]
+    @address = params[:address]
+    @qr_code = shorten_link(request.base_url + request.fullpath)
+    erb :result_green, :layout => :base
+  end
+
+  get "/result_purple" do
+    @first_name = params[:first_name]
+    @last_name = params[:last_name]
+    @email = params[:email]
+    @phone = params[:phone]
+    @work = params[:work]
+    @address = params[:address]
+    @qr_code = shorten_link(request.base_url + request.fullpath)
+    erb :result_purple, :layout => :base
+  end
   post "/send_message" do
     @client = Twilio::REST::Client.new('ACed3ed813257f8acedfce46a695216257','cb1dd832eda91ea39319fe6827f1650b')
     @client.messages.create(

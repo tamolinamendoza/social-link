@@ -109,6 +109,22 @@ input:focus {
   margin-top: 70px;
 }
 
+.business_card_green {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.business_card_purple {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
 .z-depth-5 {
     box-shadow: 0 -5px 24px 0 rgba(0,0,0,0.2),0 12px 20px 0 rgba(0,0,0,0.22);
 }
@@ -139,7 +155,6 @@ input:focus {
   position: relative;
   width: 540px;
   height: 315px;
-
 }
 .business_card_black {
   background-image: url("../images/Card4.jpg");
@@ -148,7 +163,6 @@ input:focus {
   position: relative;
   width: 540px;
   height: 315px;
-
 }
 .business_card_brown {
   background-image: url("../images/Card2.jpg");
@@ -157,9 +171,25 @@ input:focus {
   position: relative;
   width: 540px;
   height: 315px;
-
 }
 
+.business_card_green {
+  background-image: url("../images/Card5.jpg");
+  background-size: 100%;
+  display: block;
+  position: relative;
+  width: 540px;
+  height: 315px;
+}
+.business_card_purple {
+  background-image: url("../images/Card6.jpg");
+  background-size: 100%;
+  display: block;
+  position: relative;
+  width: 540px;
+  height: 315px;
+
+}
 .field {
   position: absolute;
 }
@@ -367,9 +397,6 @@ input:focus {
   margin-left: 20px;
 }
 
-.next_icon{
-  font-size: 3rem !important;
-}
 .page-footer1 {
   position: absolute;
   bottom: 0;
@@ -399,7 +426,7 @@ input:focus {
     width: 70%;
     background-color: white;
     padding: 2%;
-    height: 100%;
+    height: 130%;
 }
 
 .div_themes {
@@ -430,6 +457,8 @@ input:focus {
   filter: alpha(opacity=30);
   box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.2), 0 8px 40px 3px rgba(0, 0, 0, 0.19);
   width: 41%;
+  margin-bottom:-5%;
+
 }
 
 .themes_right:hover {
@@ -448,7 +477,6 @@ input:focus {
 
 .themes_bottom{
   margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .themes_subtitle{

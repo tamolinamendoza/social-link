@@ -1,0 +1,65 @@
+<div class="card_container">
+<div class="navbar-fixed">
+  <nav class="header">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo brand_text">Social Link</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/themes">Build Your Card</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+<div class="card-panel layout z-depth-3 white_to_bottom">
+
+    <div class="business_card_purple z-depth-5">
+
+      <div id="name" class="field"><%=@first_name%> <%=@last_name%></div>
+      <div id="email" class="field">
+        <i class="material-icons icon">email</i>
+        <a href="mailto:<%=@email%>" class="link"><%=@email%></a>
+      </div>
+
+      <div id="phone" class="field"><i class="material-icons icon">phone</i>
+        <a href="tel:<%=@phone%>" class="link"><%=@phone%></a>
+      </div>
+      <div id="work" class="field"><span><%=@work%></span></div>
+      <div id="address_icon" class="field"><i class="material-icons icon">location_on</i></div>
+      <div id="address" class="field">
+        <a href="http://maps.google.com/maps?z=12&t=m&q=<%=@address%>" class="link" target="_blank"><%=@address%></a>
+      </div>
+
+      <img id="qr" class="field" src="https://api.qrserver.com/v1/create-qr-code/?data=<%=@qr_code%>&amp;size=100x100" alt="" title="">
+    </div>
+</div>
+
+<a class="waves-effect waves-light btn modal-trigger send_button button_formatting_send z-depth-3" href="#modal1">Send your Card!</a>
+
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5><strong>Get URL:</strong></h5>
+        <p class="link_styling"> <%=@qr_code%></p>
+        <br>
+      <h5><strong>Send by text message:</strong></h5>
+
+        <form method="POST" action="/send_message" target="_blank">
+          <input type="tel" name="phonenumber" class="single_line">
+          <input type="hidden" name="qrcode" value="<%=@qr_code%>">
+          <input type="hidden" name="name" value="<%=@first_name%>">
+          <button class="btn waves-effect waves-light button text_btn" type="submit" name="action">Submit
+                   <i class="material-icons right">send</i>
+         </button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+    </div>
+  </div>
+
+<script>Materialize.toast('Done! Here is your card:', 1150, "toast_final")</script>
+</div>
